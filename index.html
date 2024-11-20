@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Play Sprunked - The ultimate horror mod of Sprunki Game. Experience the best beatbox games with our Sprunki Horror Mod. Create haunting music with our unique Sprunki mods for Incredibox fans!"
+    />
+    <meta
+      name="keywords"
+      content="Sprunked, Sprunki game, Sprunki Mod, sprunki mods incredibox, Sprunki Horror Mod, beatbox games"
+    />
+    <title>Sprunked - The Ultimate Horror Mod for Sprunki Game | Create Haunting Beatbox Music</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      :root {
+        --primary-color: #2c1810;
+        --secondary-color: #8b0000;
+        --accent-color: #ff4433;
+        --text-color: #333;
+        --light-bg: #f5f5f5;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+      }
+
+      .hero {
+        background: linear-gradient(rgba(44, 24, 16, 0.9), rgba(44, 24, 16, 0.9)), url("horror-bg.jpg");
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        background-size: cover;
+      }
+
+      .nav {
+        background: var(--primary-color);
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .section {
+        padding: 80px 20px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .feature-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background: var(--accent-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: background 0.3s;
+      }
+
+      .cta-button:hover {
+        background: var(--secondary-color);
+      }
+
+      .testimonials {
+        background: var(--light-bg);
+      }
+
+      .footer {
+        background: var(--primary-color);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .faq {
+        background: var(--light-bg);
+        padding: 80px 20px;
+      }
+
+      .faq-item {
+        background: white;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq-question {
+        padding: 20px;
+        background: var(--primary-color);
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-answer {
+        padding: 20px;
+        display: none;
+      }
+
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+
+      .faq-item.active .faq-question::after {
+        transform: rotate(180deg);
+      }
+
+      .faq-question::after {
+        content: "▼";
+        font-size: 12px;
+        transition: transform 0.3s ease;
+      }
+
+      .header {
+        background: linear-gradient(rgba(44, 24, 16, 0.9), rgba(44, 24, 16, 0.9)), url('horror-bg.jpg');
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        background-size: cover;
+      }
+
+      .game-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        aspect-ratio: 16/9;
+        position: relative;
+        width: 100%;
+      }
+
+      .game-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      }
+
+      @media (max-width: 768px) {
+        .nav ul {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gameplay">Gameplay</a></li>
+      </ul>
+    </nav>
+
+    <header id="home" class="header">
+      <div class="container">
+        <h1>Welcome to Sprunked New Things</h1>
+        <p>Experience the Ultimate Horror Mod for Sprunki Game</p>
+        <div class="game-container">
+          <iframe src="https://cocrea.world/@SprunkedFan1/Sprunkednewthings" allowfullscreen></iframe>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Sprunked - The Ultimate Sprunki Horror Mod</h2>
+        <p>
+          Welcome to the world of Sprunked New Things, where beatbox games meet horror in an unprecedented fusion. As the most innovative Sprunki mod available, Sprunked transforms the traditional Sprunki game experience into a spine-chilling musical adventure. Our unique take on beatbox games combines the creative freedom of Incredibox-style gameplay with haunting atmospheres and horror elements.
+        </p>
+        <p>
+          Originally developed as one of the most ambitious Sprunki mods, this game has evolved into a full-fledged horror-themed musical experience. Whether you're a fan of the original Sprunki game or exploring the world of beatbox games for the first time, Sprunked offers an unforgettable journey into the dark side of music creation.
+        </p>
+        <p>
+          What sets Sprunked apart from other Sprunki mods is its unique horror theme and innovative gameplay mechanics. As a specialized Sprunki Horror Mod, we've carefully crafted every aspect of the game to deliver both an engaging musical experience and a thrilling horror atmosphere.
+        </p>
+
+        <div style="height: 20px"></div>
+        <img src="/images/bg.png" alt="Sprunked Game Screenshot" width="100%" class="center">
+        
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Unique Features of Our Sprunki Horror Mod</h2>
+        <div class="features">
+          <div class="feature-card">
+            <h3>Horror-Themed Beatbox Experience</h3>
+            <p>Unlike traditional beatbox games or standard Sprunki mods, Sprunked offers a unique horror-themed musical playground. Create spine-chilling compositions using our specially designed sound library inspired by classic horror elements.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Advanced Mod Features</h3>
+            <p>Building upon the beloved Sprunki game framework, our Sprunki Horror Mod introduces new gameplay mechanics and features that push the boundaries of what's possible in beatbox games.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Incredibox-Style Innovation</h3>
+            <p>As fans of both Sprunki game and Incredibox, we've created a mod that honors both while bringing something entirely new to the genre of beatbox games.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gameplay" class="section">
+      <div class="container">
+        <h2>How to Play</h2>
+        <p>
+          Sprunked New Things takes the beloved mechanics of Sprunki game and adds a horrifying twist. Create your own haunting
+          masterpieces by combining various horror-themed sound elements:
+        </p>
+        <ul>
+          <li>Select from a variety of horror-themed characters</li>
+          <li>Mix and match different sounds to create unique compositions</li>
+          <li>Discover hidden combinations and unlock special animations</li>
+          <li>Share your creepy creations with other players</li>
+          <li>Experience new content through regular updates and mod support</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="why-play" class="section" style="background: var(--light-bg)">
+      <div class="container">
+        <h2>Why Choose Sprunked New Things for Your Beatbox Gaming Experience?</h2>
+
+        <div style="margin-top: 30px">
+          <h3>Free & Unblocked Access to Premium Sprunki Mods</h3>
+          <p>Experience one of the most innovative Sprunki mods without any restrictions. Our platform offers completely free access to all features of this unique Sprunki Horror Mod, with no hidden costs or paywalls. Start creating horror-themed beatbox music instantly!</p>
+        </div>
+
+        <div style="margin-top: 30px">
+          <h3>Mobile-Friendly Beatbox Games</h3>
+          <p>Play Sprunked and enjoy our Sprunki game mod seamlessly across all your devices. Whether you're a fan of mobile beatbox games or prefer desktop gaming, our responsive design ensures a perfect experience on any screen.</p>
+        </div>
+
+        <div style="margin-top: 30px">
+          <h3>Secure & Fast Gaming Platform</h3>
+          <p>Experience the best performance among all Sprunki mods with our optimized platform. We've fine-tuned every aspect of our Sprunki Horror Mod to ensure smooth gameplay while maintaining the highest security standards for all our beatbox games enthusiasts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="section">
+      <div class="container">
+        <h2>Ready to Experience the Horror?</h2>
+        <p>
+          Join thousands of players who have already discovered the dark side of beatbox games with Sprunked. As one of
+          the most unique Sprunki mods available, we offer:
+        </p>
+        <ul>
+          <li>Free-to-play experience</li>
+          <li>Regular updates and new content</li>
+          <li>Active community support</li>
+          <li>Compatible with all modern browsers</li>
+        </ul>
+        <a href="#home" class="cta-button">Play Sprunked Now</a>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">What is Sprunked and how is it different from regular Sprunki game?</div>
+            <div class="faq-answer">
+              Sprunked is a unique horror mod of the Sprunki game that transforms the traditional beatbox experience
+              into a spine-chilling musical adventure. While maintaining the core mechanics of creating music through
+              character combinations, Sprunked adds horror-themed elements, eerie sounds, and atmospheric visuals to
+              create a completely new gaming experience.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Is Sprunked free to play?</div>
+            <div class="faq-answer">
+              Yes, Sprunked is completely free to play! You can access all core features and gameplay elements without
+              any payment. Simply visit our website and start creating your horror-themed musical masterpieces
+              immediately.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Can I play Sprunked on mobile devices?</div>
+            <div class="faq-answer">
+              Yes, Sprunked is fully optimized for both desktop and mobile devices. Our responsive design ensures a
+              smooth gaming experience whether you're playing on your computer, tablet, or smartphone.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How do I save my Sprunked creations?</div>
+            <div class="faq-answer">
+              Sprunked allows you to save your musical creations directly in your browser. You can also share your
+              compositions with friends through a unique link, or export them for personal use.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Are there different difficulty levels in Sprunked?</div>
+            <div class="faq-answer">
+              While Sprunked doesn't have traditional difficulty levels, it offers varying complexity in its musical
+              combinations. Beginners can start with simple beat combinations, while advanced users can explore complex
+              arrangements and hidden special combinations.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How often does Sprunked get updated with new content?</div>
+            <div class="faq-answer">
+              We regularly update Sprunked with new features, sounds, and horror elements. Our team is constantly
+              working on new content and improvements based on community feedback to keep the experience fresh and
+              exciting.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Can I use Sprunked mods with the original Sprunki game?</div>
+            <div class="faq-answer">
+              Sprunked is a standalone horror mod that works independently of the original Sprunki game. While it shares
+              similar mechanics with Sprunki, it offers its own unique horror-themed experience and features.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Is Sprunked suitable for all ages?</div>
+            <div class="faq-answer">
+              Due to its horror theme and atmospheric elements, Sprunked is recommended for older children and adults
+              who enjoy spooky content. While it's not extremely scary, it does contain horror elements that might not
+              be suitable for very young children.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How can I report bugs or suggest new features?</div>
+            <div class="faq-answer">
+              We welcome feedback from our community! You can report bugs or suggest new features through our contact
+              form or join our community forums to discuss improvements with other players and our development team.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Can I create custom sounds or mods for Sprunked?</div>
+            <div class="faq-answer">
+              Currently, Sprunked doesn't support user-created custom sounds or mods. However, we're constantly
+              expanding our library of horror-themed sounds and effects based on community suggestions and feedback.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Sprunked New Things - The Ultimate Horror Mod for Sprunki Game. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Add scroll animation for elements
+      window.addEventListener("scroll", function () {
+        const elements = document.querySelectorAll(".feature-card");
+        elements.forEach((element) => {
+          const position = element.getBoundingClientRect();
+          if (position.top < window.innerHeight) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+          }
+        });
+      });
+
+      // FAQ Section Functionality
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const item = question.parentElement;
+          document.querySelectorAll(".faq-item").forEach((otherItem) => {
+            if (otherItem !== item) {
+              otherItem.classList.remove("active");
+            }
+          });
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
